@@ -62,4 +62,4 @@ movie_data = {
         '우리들(2016)':'4.0'
     }}
 if movie_property in movie_property:
-    print(movie_data[movie_data])
+    print(movie_data[movie_property])
