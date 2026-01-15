@@ -24,7 +24,7 @@ movie_data = {
         'Wicked(2024)':'3.8'
         'The Intern(2015)':'3.3'
         'The Truman Show(1998)':'4.2'
-        'The Notebook(2004):'3.9'
+        'The Notebook(2004)':'3.9'
      
     },
     '열린결말': {
