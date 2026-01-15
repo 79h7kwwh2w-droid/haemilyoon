@@ -18,22 +18,22 @@ movie_data =
         'Joker(2019)':'3.8',
         'Marriage Story(2019)':'4.0',
         '기적(2021)':'3.7'
-        ],
-    '해피엔딩': [
+    },
+    '해피엔딩': {
         'The Match(2025)':'3.4',
         'Wicked(2024)':'3.8',
         'The Intern(2015)':'3.3',
         'The Truman Show(1998)':'4.2',
         'The Notebook(2004)':'3.9'
      
-    ],
-    '열린결말': [
+    },
+    '열린결말': {
         'Happyend(2024)':'4.0',
         'Decision to Leave':'4.0',
         'Nothing Serious':'3.2',
         'No Country for old Men(2007)':'4.3'
        
-    ],
+    },
     '불편한 엔딩': {
         'Michey 17(2025)':'3.6',
         'Super Happy Forever(2024)':'3.6',
