@@ -62,12 +62,4 @@ movie_data = {
         '우리들(2016)':'4.0'
     }}
 if movie_property =='여운형':
-    st.write('Aftersun': ' 4.2 ',
-             'F1(2025)':'3.7',
-             'Little Amelie or the Character of Rain(2025)':'4.1',
-             'Escape(2024)':'3.4',
-             'Ferrari(2023)':'3.2',
-             'Joker(2019)':'3.8',
-             'Marriage Story(2019)':'4.0',
-             '기적(2021)':'3.7')
-  
+    st.write(movie_data)
