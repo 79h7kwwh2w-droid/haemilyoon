@@ -3,7 +3,7 @@ import streamlit as st
 st.title('영화 이건 꼭 보고 넘어가자')
 
 # 사용자 입력 받기
-movie property = st.selectbox('원하는 영화 특징을 선택하세요': [
+movie_property = st.selectbox('원하는 영화 특징을 선택하세요', [
     '여운형', '해피엔딩', '열린결말', '불편한 엔딩', '코미디','뮤지컬스타일', '잔잔한'
 ])
 
