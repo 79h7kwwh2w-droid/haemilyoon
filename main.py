@@ -61,4 +61,30 @@ movie_data = {
         'Love Letter(1995)':'4.1',
         '우리들(2016)':'4.0'
     }}
+
+if 'zzim' not in st.session_state:
+    st.session_state.zzim = []
+
 st.write(movie_data[movie_property])
+
+st.martdown('--------')
+
+for movie, score in movie_data[genre].item():
+    col1, col2 = st.columns([4,1])
+
+with col1:
+    st.write(f'🎬{movie}⭐{score}')
+with col2:
+    if st.button('♥️', key=movie):
+        if movie not in st.session_state.zzim:
+            st.session_state.zzim.append(movie)
+st.markdown('--------')
+
+st.subheader('♥️ 찜한 영화'
+
+if len(st.session_state.zzim)==0:
+    st.write('아직 찜한 영화가 없어요')
+else:
+    for m in st.session_state.zzim:
+        st.write('✔️',m)
+
