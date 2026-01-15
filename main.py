@@ -8,7 +8,7 @@ movie_property = st.selectbox('원하는 영화 특징을 선택하세요', [
 ])
 
 # 영화제목과 평점
-movie_data = 
+movie_data = {
     '여운형': {
         'Aftersun': ' 4.2 ',
         'F1(2025)':'3.7',
@@ -60,5 +60,5 @@ movie_data =
         '파수꾼(2010)':'3.9',
         'Love Letter(1995)':'4.1',
         '우리들(2016)':'4.0'
-    }
+    }}
 st.write(movie_data[movie_property])
