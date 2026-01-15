@@ -61,5 +61,5 @@ movie_data = {
         'Love Letter(1995)':'4.1',
         '우리들(2016)':'4.0'
     }}
-if movie_data in data:
-    print(data[movie_data])
+if movie_property in movie_property:
+    print(movie_data[movie_data])
