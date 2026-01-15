@@ -62,4 +62,4 @@ movie_data = {
         '우리들(2016)':'4.0'
     }}
 if movie_property =='여운형':
-    st.write(movie_data)
+    st.write('여운형'in movie_data)
