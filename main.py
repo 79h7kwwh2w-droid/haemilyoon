@@ -60,5 +60,5 @@ movie_data =
         '파수꾼(2010)':'3.9',
         'Love Letter(1995)':'4.1',
         '우리들(2016)':'4.0'
-    }}
+    }
 st.write(movie_data[movie_property])
