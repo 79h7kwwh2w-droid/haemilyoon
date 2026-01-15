@@ -61,5 +61,4 @@ movie_data = {
         'Love Letter(1995)':'4.1',
         '우리들(2016)':'4.0'
     }}
-if movie_property =='여운형':
-    st.write('여운형'in movie_data)
+st.write(movie_data[movie_property])
