@@ -69,7 +69,7 @@ st.write(movie_data[movie_property])
 
 st.markdown('--------')
 
-for movie, score in movie_data[genre].item():
+for movie, score in movie_data[genre].items():
     col1, col2 = st.columns([4,1])
 
 with col1:
