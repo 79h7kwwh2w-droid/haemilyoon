@@ -3,7 +3,7 @@ import streamlit as st
 st.title('영화 이건 꼭 보고 넘어가자(Title and star)')
 
 if 'liked_movies' not in st.session_state:
-    st.session_state.liked_moveis = set()
+    st.session_state.liked_moveis = []
 
 
 # 영화제목과 평점
