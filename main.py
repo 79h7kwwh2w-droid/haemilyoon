@@ -80,9 +80,8 @@ with col2:
      if st.buttoen('❤️찜', key=f'like_{title}'):
             st.session_state.liked_movies,add(title)
 
-     else:
-        title in st.session_state.liked_movies:
-         if st.button('💔찜 취소', key=f'unlike_{title}'):
+     else title in st.session_state.liked_movies:
+     if st.button('💔찜 취소', key=f'unlike_{title}'):
             st.session_state.liked_movies,remove(title)
  
        
