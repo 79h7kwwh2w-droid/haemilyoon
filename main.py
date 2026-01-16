@@ -80,7 +80,7 @@ with col2:
             st.session_state.zzim.append(movie)
 st.markdown('--------')
 
-st.subheader('♥️ 찜한 영화'
+st.subheader('♥️ 찜한 영화')
 
 if len(st.session_state.zzim)==0:
     st.write('아직 찜한 영화가 없어요')
