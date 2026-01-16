@@ -67,7 +67,7 @@ if 'zzim' not in st.session_state:
 
 st.write(movie_data[movie_property])
 
-st.martdown('--------')
+st.markdown('--------')
 
 for movie, score in movie_data[genre].item():
     col1, col2 = st.columns([4,1])
