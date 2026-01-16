@@ -67,9 +67,12 @@ if 'zzim' not in st.session_state:
 
 st.write(movie_data[movie_property])
 
-st.markdown('--------')
+genre = st.selectbox( '원하는 영화 특징을 선택하세요',movie_data.keys() )
+st.markdown('---')
 
-for movie, score in movie_data[genre].items():
+for movie in movie_data[genre]:
+    score = movie_data[genre][movie]
+    
     col1, col2 = st.columns([4,1])
 
 with col1:
@@ -78,7 +81,7 @@ with col2:
     if st.button('♥️', key=movie):
         if movie not in st.session_state.zzim:
             st.session_state.zzim.append(movie)
-st.markdown('--------')
+st.markdown('---')
 
 st.subheader('♥️ 찜한 영화')
 
