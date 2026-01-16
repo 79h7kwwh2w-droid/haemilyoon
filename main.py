@@ -65,11 +65,11 @@ genre = st.selectbox(
     key='feature_select'
 )
 
-if 'liked_movies' not in st.session_state:
-    st.session_state.liked_moveis = []
-
 movies =movie_data[genre]
 
+if 'liked_movies' not in st.session_state:
+    st.session_state.liked_movies = []
+    
 for title, star in movies.items():
     col1, col2 = st.columns([4,1])
 
