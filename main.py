@@ -84,7 +84,7 @@ with col2:
         if st.button('💔찜 취소', key=f'unlike_{title}'):
            st.session_state.liked_movies,remove(title)
     else:
-        if st.buttoen('❤️찜' key=f'like_{title}'):
+        if st.buttoen('❤️찜', key=f'like_{title}'):
             st.session_state.liked_movies,add(title)
 
 st.driver()
