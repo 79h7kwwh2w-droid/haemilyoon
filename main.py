@@ -67,7 +67,11 @@ if 'zzim' not in st.session_state:
 
 st.write(movie_data[movie_property])
 
-genre = st.selectbox( '원하는 영화 특징을 선택하세요',movie_data.keys() )
+genre = st.selectbox( 
+    '원하는 영화 특징을 선택하세요',
+    movie_data.keys(),
+    key='genre_select' )
+
 st.markdown('---')
 
 for movie in movie_data[genre]:
