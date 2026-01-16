@@ -90,7 +90,7 @@ st.divider()
 
 st.subheader('❤️ 찜한 영화')
 
-if st.sesion_state.liked_movies:
+if st.session_state.liked_movies:
     for movie in st.session_state.liked_movies:
         st.write(f'{movie}')
 
