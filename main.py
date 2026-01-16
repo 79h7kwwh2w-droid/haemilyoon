@@ -2,6 +2,9 @@ import streamlit as st
 
 st.title('영화 이건 꼭 보고 넘어가자(Title and star)')
 
+if 'liked_movies' not in st.session_state:
+    st.session_state.liked_moveis = set()
+
 # 사용자 입력 받기
 movie_property = st.selectbox('원하는 영화 특징을 선택하세요', [
     '여운형', '해피엔딩', '열린결말', '불편한 엔딩', '코미디','뮤지컬스타일', '잔잔한'
@@ -61,37 +64,40 @@ movie_data = {
         'Love Letter(1995)':'4.1',
         '우리들(2016)':'4.0'
     }}
-
-if 'zzim' not in st.session_state:
-    st.session_state.zzim = []
-
-st.write(movie_data[movie_property])
-
 genre = st.selectbox( 
     '원하는 영화 특징을 선택하세요',
-    movie_data.keys(),
-    key='genre_select' )
+    list(movie_data.keys()),
+    key='feature_select'
+)
+st.divider()
 
-st.markdown('---')
+movies = movie_date[feature]
 
-for movie in movie_data[genre]:
-    score = movie_data[genre][movie]
-    
+for title, star in movies.items():
     col1, col2 = st.columns([4,1])
 
 with col1:
-    st.write(f'🎬{movie}⭐{score}')
+    st.write(f'🎬{title}⭐{star}')
+
 with col2:
-    if st.button('♥️', key=movie):
-        if movie not in st.session_state.zzim:
-            st.session_state.zzim.append(movie)
-st.markdown('---')
+    if title in st.session_state.liked_movies:
+        if st.button('💔찜 취소', key=f'unlike_[title}'):
+           st.session_state.liked_movies,remove(title)
+    else:
+        if st.buttoen('❤️찜' key=f'like_{title}'):
+            st.session_state.liked_movies,add(title)
 
-st.subheader('♥️ 찜한 영화')
+st.driver()
 
-if len(st.session_state.zzim)==0:
-    st.write('아직 찜한 영화가 없어요')
+
+st.subheader('❤️ 찜한 영화')
+
+if st.sesion_state.liked_movies:
+    for movie in st.session_state.liked_movies:
+        st.write(f'{movie}')
+
 else:
-    for m in st.session_state.zzim:
-        st.write('✔️',m)
+    st.write('✔️ 아직 찜한 영화가 없습니다.')
+    
+
 
