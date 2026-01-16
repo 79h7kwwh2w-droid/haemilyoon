@@ -5,8 +5,6 @@ st.title('영화 이건 꼭 보고 넘어가자(Title and star)')
 if 'liked_movies' not in st.session_state:
     st.session_state.liked_moveis = set()
 
-# 사용자 입력 받기
-movie_property = st.selectbox(list(movie_data.keys(),key='feature_select'))
 
 # 영화제목과 평점
 movie_data = {
@@ -64,7 +62,11 @@ movie_data = {
     }}
 
 st.divider()
-
+genre = st.selectbox( 
+    '원하는 영화 특징을 선택하세요',
+    list(movie_data.keys()),
+    key='feature_select'
+)
 movies =movie_data[feature]
 
 for title, star in movies.items():
