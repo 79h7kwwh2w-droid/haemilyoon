@@ -71,7 +71,7 @@ genre = st.selectbox(
 )
 st.divider()
 
-movies = movie_data[title]
+movies =movie_data
 
 for title, star in movies.items():
     col1, col2 = st.columns([4,1])
