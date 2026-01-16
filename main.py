@@ -6,9 +6,9 @@ if 'liked_movies' not in st.session_state:
     st.session_state.liked_moveis = set()
 
 # 사용자 입력 받기
-movie_property = st.selectbox('원하는 영화 특징을 선택하세요', [
-    '여운형', '해피엔딩', '열린결말', '불편한 엔딩', '코미디','뮤지컬스타일', '잔잔한'
-])
+movie_property = st.selectboxlist(movie_data.keys()),
+    key='feature_select'
+)
 
 # 영화제목과 평점
 movie_data = {
@@ -64,14 +64,10 @@ movie_data = {
         'Love Letter(1995)':'4.1',
         '우리들(2016)':'4.0'
     }}
-genre = st.selectbox( 
-    '원하는 영화 특징을 선택하세요',
-    list(movie_data.keys()),
-    key='feature_select'
-)
+
 st.divider()
 
-movies =movie_data
+movies =movie_data[feature]
 
 for title, star in movies.items():
     col1, col2 = st.columns([4,1])
