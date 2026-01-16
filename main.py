@@ -68,7 +68,7 @@ genre = st.selectbox(
     key='feature_select'
 )
 
-movies =movie_data[feature_select]
+movies =movie_data[genre]
 
 for title, star in movies.items():
     col1, col2 = st.columns([4,1])
