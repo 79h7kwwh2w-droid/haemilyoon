@@ -21,14 +21,12 @@ movie_data = {
         'The Intern(2015)':'3.3',
         'The Truman Show(1998)':'4.2',
         'The Notebook(2004)':'3.9'
-     
     },
     '열린결말': {
         'Happyend(2024)':'4.0',
         'Decision to Leave':'4.0',
         'Nothing Serious':'3.2',
         'No Country for old Men(2007)':'4.3'
-       
     },
     '불편한 엔딩': {
         'Michey 17(2025)':'3.6',
